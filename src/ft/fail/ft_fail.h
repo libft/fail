@@ -28,8 +28,6 @@ t_err	ft_fail_test(
 			t_ft_fail target,
 			void *context,
 			t_ft_fail_options *options);
-void	ft_fail_start(void);
-void	ft_fail_end(void);
 size_t	ft_fail_select(size_t exclusive_max);
 
 #endif
