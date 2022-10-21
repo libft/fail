@@ -17,7 +17,7 @@
 
 # include <stddef.h>
 
-typedef t_err	(*t_ft_fail)(void *context);
+typedef t_err	(*t_ft_fail)(const void *context);
 
 typedef struct s_ft_fail_options {
 	size_t	max_depth;
@@ -26,8 +26,10 @@ typedef struct s_ft_fail_options {
 
 t_err	ft_fail_test(
 			t_ft_fail target,
-			void *context,
-			t_ft_fail_options *options);
+			const void *context,
+			const t_ft_fail_options *options);
 size_t	ft_fail_select(size_t exclusive_max);
+void	ft_fail_pause(void);
+void	ft_fail_resume(void);
 
 #endif
