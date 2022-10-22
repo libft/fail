@@ -36,7 +36,7 @@ t_err		ft_fail_select(
 t_err		ft_fail_pause(
 				const char *cause);
 void		ft_fail_resume(void);
-bool	 	ft_fail_is_error(void);
+bool		ft_fail_is_error(void);
 t_err		ft_fail_report_error(const char *description);
 
 typedef struct s_ft_fail_g_select
